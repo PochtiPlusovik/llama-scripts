@@ -1,7 +1,7 @@
 This repository contains a bash script to run MoE LLMs using llama.cpp compiled with SYCL support. To install, clone the repository:
 `git clone https://github.com/PochtiPlusovik/llama-scripts`.
 Make the script executable:
-`cd llama llama-scripts && chmod a+x runner-MoE-Intel-Arc.sh`.
+`cd ~/llama-scripts && chmod a+x runner-MoE-Intel-Arc.sh`.
 Change the model path on line 4 of the script using a text editor. You can view the list of installed models with the following command:
 `sudo find / -name "*.gguf"`.
 Run the script:
