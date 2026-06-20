@@ -7,3 +7,4 @@ Change the model path on line 4 of the script using a text editor. You can view 
 Run the script:
 `./runner-MoE-Intel-Arc.sh`.
 The script was tested on Arch Linux and Intel Arc B580 with the Qwen 3.6-A3B model.
+This script should work on other backends and graphics cards, but testing has not been performed.
