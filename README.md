@@ -15,13 +15,13 @@ Installation of a Script for Dataset Generation.
 
 To install, clone the repository:
 `git clone https://github.com/PochtiPlusovik/llama-scripts`.
-In the script, you are required to update the variables LLM, LANGUAGE, INPUTFILE, and OUTPUTFILE. The INPUTFILE file must include the topics for generation, each starting on a new line. For MoE models, uncomment --no-mmap. If you are using SYCL, enter: 
-`source /opt/intel/oneapi/setvars.sh.`
-You can view the list of installed models with the following command:
+In the script, you are required to update the variables LLM, LANGUAGE, INPUTFILE, and OUTPUTFILE. You can view the list of installed models with the following command:
 `sudo find / -name "*.gguf"`.
+The INPUTFILE file must include the topics for generation, each starting on a new line. For MoE models, uncomment --no-mmap. If you are using SYCL, enter: 
+`source /opt/intel/oneapi/setvars.sh`.
 Make the script executable:
-`cd ~/llama-scripts && chmod a+x generate-dataset`.
+`cd ~/llama-scripts && chmod a+x generate-dataset.sh`.
 Run the script in ~/llama-scripts:
-`./generate-dataset`.
+`./generate-dataset.sh`.
 
 The scripts were tested on Arch Linux and Intel Arc B580 with the Qwen 3.6-A3B model. These scripts should work on other backends and graphics cards, but testing has not been performed
