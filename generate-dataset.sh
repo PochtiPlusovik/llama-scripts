@@ -15,7 +15,8 @@ do
 		--color off \
 		-np 1 \
 		--single-turn \
-		--reasoning-format none \
+#	    Uncomment --reasoning-format none on non-Gemma models
+#		--reasoning-format none \
 		--simple-io \
 		-c 16512 >> $OUTPUTFILE  
 	done < "$INPUTFILE"
