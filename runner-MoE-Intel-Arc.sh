@@ -1,6 +1,6 @@
 #!/bin/sh 
 cd ~/llama.cpp
-source /opt/intel/oneapi/setvars.sh 
+source /opt/intel/oneapi/setvars.sh # Comment out if you don't use SYCL
 ~/llama.cpp/build/bin/llama-server    -m /path/to/model.gguf \ # Replace with the path to you model 
 	--no-mmap \ 
 	-np 1 \
