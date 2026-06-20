@@ -14,6 +14,7 @@ do
 		--no-display-prompt \
 		--color off \
 		-np 1 \
+		--single-turn \
 		--reasoning-format none \
 		--simple-io \
 		--single-turn \
