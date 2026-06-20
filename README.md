@@ -15,7 +15,8 @@ Installation of a Script for Dataset Generation.
 
 To install, clone the repository:
 `git clone https://github.com/PochtiPlusovik/llama-scripts`.
-In the script, you are required to update the variables LLM, INPUTFILE, and OUTPUTFILE. The INPUTFILE file must include the topics for generation, each starting on a new line. 
+In the script, you are required to update the variables LLM, LANGUAGE, INPUTFILE, and OUTPUTFILE. The INPUTFILE file must include the topics for generation, each starting on a new line. For MoE models, uncomment --no-mmap. If you are using SYCL, enter: 
+`source /opt/intel/oneapi/setvars.sh.`
 You can view the list of installed models with the following command:
 `sudo find / -name "*.gguf"`.
 Make the script executable:
