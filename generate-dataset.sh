@@ -17,6 +17,5 @@ do
 		--single-turn \
 		--reasoning-format none \
 		--simple-io \
-		--single-turn \
 		-c 16512 >> $OUTPUTFILE  
 	done < "$INPUTFILE"
