@@ -20,7 +20,7 @@ You can view the list of installed models with the following command:
 `sudo find / -name "*.gguf"`.
 Make the script executable:
 `cd ~/llama-scripts && chmod a+x generate-dataset`.
-Run the script:
+Run the script in ~/llama-scripts:
 `./generate-dataset`.
 
 The scripts were tested on Arch Linux and Intel Arc B580 with the Qwen 3.6-A3B model. These scripts should work on other backends and graphics cards, but testing has not been performed
