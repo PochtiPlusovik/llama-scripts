@@ -1,4 +1,8 @@
-This repository contains a bash script to run MoE LLMs using llama.cpp compiled with SYCL support. To install, clone the repository:
+This repository contains a bash script to run LLMs using llama.cpp.
+
+Installation Instructions for MoE Model Script on llama.cpp Compiled with SYCL Support.
+
+To install, clone the repository:
 `git clone https://github.com/PochtiPlusovik/llama-scripts`.
 Make the script executable:
 `cd ~/llama-scripts && chmod a+x runner-MoE-Intel-Arc.sh`.
