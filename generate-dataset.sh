@@ -15,7 +15,7 @@ do
 		--color off \
 		-np 1 \
 		--single-turn \
-#	    comment --reasoning-format on Gemma models
+#	    Comment --reasoning-format on Gemma models
 	    --reasoning-format none \
 		--simple-io \
 		-c 16512 >> $OUTPUTFILE  
