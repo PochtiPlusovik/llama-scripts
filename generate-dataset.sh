@@ -15,8 +15,6 @@ do
 		--color off \
 		-np 1 \
 		--single-turn \
-#		Comment out for models that send Thinking Mode as a standard response.
-	    --reasoning-format none \
 		--simple-io \
 		-c 16512 >> $OUTPUTFILE  
 	done < "$INPUTFILE"
