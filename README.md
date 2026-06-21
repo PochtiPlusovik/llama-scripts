@@ -13,7 +13,7 @@ Run the script:
 
 Installation of a Script for Dataset Generation.
 
-Attention: You will need to additionally clean the model's output from the Thinking Mode and standard llama.cpp output if you have disabled `--reasoning-format none` in the script. The `--reasoning-mode none` parameter must be commented out in the script when using LLMs that output Thinking Mode as a standard response, such as Gemma-4 26B A4B.
+Attention: After generation, you will need to clean the dataset from the standard llama.cpp output. You can uncomment `--reasoning-budget 0`, but the generation quality may degrade. The `--reasoning-mode none` parameter must be commented out in the script when using LLMs that output Thinking Mode as a standard response, such as Gemma-4 26B A4B.
 To install, clone the repository:
 `git clone https://github.com/PochtiPlusovik/llama-scripts`.
 In the script, you are required to update the variables LLM, LANGUAGE, INPUTFILE, and OUTPUTFILE. You can view the list of installed models with the following command:
