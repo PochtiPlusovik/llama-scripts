@@ -13,6 +13,7 @@ do
 		--no-mmap \
 		--no-display-prompt \
 		--color off \
+#	    --reasoning-budget 0
 		-np 1 \
 		--single-turn \
 		--simple-io \
