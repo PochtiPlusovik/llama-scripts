@@ -9,13 +9,13 @@ OUTPUTTOKENS=500
 while IFS= read -r THEMES
 do
 	~/llama.cpp/build/bin/llama-cli   -m $LLM -p "You are a specialist in ML dataset writing. Your task is to write a dataset on the topic: $THEME in ShareGPT format, in $LANGUAGE. The agent's response in the dataset must be structured, containing: an introduction, detailed reasoning, and a conclusion. The AI agent's response in the dataset should be approximately $OUTPUTTOKENS tokens in size. The user's question in the dataset should be approximately $INPUTTOKENS tokens in size, representing a complete prompt. The AI agent's response in the dataset must be divided into subsections. You must use only current and reliable information in the dataset. Your response must contain only the dataset in JSONL format; using other words is prohibited. The dataset should contain only important information; there should be no preambles or greetings." \
-#		The --no-mmap flag is correctly written for non-MoE models
 		--no-mmap \
 		--no-display-prompt \
 		--color off \
-#	    --reasoning-budget 0
 		-np 1 \
 		--single-turn \
 		--simple-io \
 		-c 16512 >> $OUTPUTFILE  
+#	    --reasoning-budget 0
+#		The --no-mmap flag is correctly written for non-MoE models
 	done < "$INPUTFILE"
