@@ -6,7 +6,7 @@ INPUTFILE=/path/to/themes
 OUTPUTFILE=/path/to/dataset
 INPUTTOKENS=150
 OUTPUTTOKENS=500
-while IFS= read -r THEMES
+while IFS= read -r THEME
 do
 	~/llama.cpp/build/bin/llama-cli   -m $LLM -p "You are a specialist in ML dataset writing. Your task is to write a dataset on the topic: $THEME in ShareGPT format, in $LANGUAGE. The agent's response in the dataset must be structured, containing: an introduction, detailed reasoning, and a conclusion. The AI agent's response in the dataset should be approximately $OUTPUTTOKENS tokens in size. The user's question in the dataset should be approximately $INPUTTOKENS tokens in size, representing a complete prompt. The AI agent's response in the dataset must be divided into subsections. You must use only current and reliable information in the dataset. Your response must contain only the dataset in JSONL format; using other words is prohibited. The dataset should contain only important information; there should be no preambles or greetings." >> $OUTPUTFILE \
 		--no-mmap \
